@@ -1,0 +1,117 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - CalorieTracker</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/CalorieTracker.styles.css" asp-append-version="true" />
+    <style>
+        :root {
+            --primary: #3aede0;
+            --primary-content: #032522;
+            --primary-dark: #14e0d1;
+            --primary-light: #69f1e7;
+
+            --secondary: #ed3a47;
+            --secondary-content: #ffffff;
+            --secondary-dark: #e01423;
+            --secondary-light: #f16973;
+
+            --background: #1a1a1a;
+            --foreground: #262626;
+            --border: #404040;
+
+            --copy: #fbfbfb;
+            --copy-light: #d9d9d9;
+            --copy-lighter: #a6a6a6;
+
+            --success: #3aed3a;
+            --warning: #eded3a;
+            --error: #ed3a3a;
+            --success-content: #032503;
+            --warning-content: #252503;
+            --error-content: #ffffff;
+        }
+    </style>
+</head>
+<body class="body">
+    <header>
+        <nav class="navbar">
+            <div>
+                <ul>
+                    <li id="navBar"><a href="@Url.Action("Index", "YourControllerName")">HOME</a></li>
+                    <li id="navBar"><a href="@Url.Action("Menu", "YourControllerName")">FOOD</a></li>
+                    <li id="navBar"><a href="@Url.Action("About", "YourControllerName")">REPORTS</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <div class="container">
+        <main role="main" class="pb-3">
+            @RenderBody()
+        </main>
+    </div>
+
+   
+
+    <style> 
+        .navbar { 
+            background: var(--primary);
+            overflow: hidden;
+        }
+        
+        .navbar a {
+            float: left; /* Align links to the left */
+            display: block;
+            color: var(--primary-content); /* Text color */
+            text-align: center;
+            padding: 14px 16px; /* Padding around text */
+            text-decoration: none;
+        }
+
+        /* Change color on hover */
+        .navbar a:hover {
+            background-color: #ddd; /* Hover background color */
+            color: black; /* Hover text color */
+        }
+
+        /* Style for the logo */
+        .navbar img {
+            height: 50px; /* Adjust the height of the logo as needed */
+            margin-right: 10px; /* Optional margin to separate logo from links */
+        }
+
+        /* Navbar links in the dropdown */
+        .navbar div ul {
+            list-style-type: none; /* Remove bullet points */
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+        }
+
+        /* Style for individual navbar items */
+        .navbar li {
+            display: inline-block;
+        }
+
+
+        .body {
+            background: var(--background);
+            color: var(--error-content);
+        }
+    </style>
+
+    <footer class="border-top footer text-muted">
+        <div class="container">
+            &copy; 2024 - CalorieTracker - <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
+        </div>
+    </footer>
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+    @await RenderSectionAsync("Scripts", required: false)
+</body>
+</html>
