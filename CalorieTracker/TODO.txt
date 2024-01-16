@@ -1,0 +1,3 @@
+Implement a database
+Make an account system
+Make it so there is a light and dark version

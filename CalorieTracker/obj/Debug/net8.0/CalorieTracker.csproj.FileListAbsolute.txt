@@ -28,3 +28,4 @@ C:\Users\Brady\Desktop\Personal Coding Projects\CalorieTracker\CalorieTrackerSol
 C:\Users\Brady\Desktop\Personal Coding Projects\CalorieTracker\CalorieTrackerSolution\CalorieTracker\obj\Debug\net8.0\CalorieTracker.pdb
 C:\Users\Brady\Desktop\Personal Coding Projects\CalorieTracker\CalorieTrackerSolution\CalorieTracker\obj\Debug\net8.0\CalorieTracker.genruntimeconfig.cache
 C:\Users\Brady\Desktop\Personal Coding Projects\CalorieTracker\CalorieTrackerSolution\CalorieTracker\obj\Debug\net8.0\ref\CalorieTracker.dll
+C:\Users\Brady\Desktop\Personal Coding Projects\CalorieTracker\CalorieTrackerSolution\CalorieTracker\obj\Debug\net8.0\CalorieTracker.sourcelink.json

@@ -39,11 +39,13 @@
 <body class="body">
     <header>
         <nav class="navbar">
+            <a href="@Url.Action("Index")"><img src="~/images/temp.png"></a>
             <div>
                 <ul>
-                    <li id="navBar"><a href="@Url.Action("Index", "YourControllerName")">HOME</a></li>
-                    <li id="navBar"><a href="@Url.Action("Menu", "YourControllerName")">FOOD</a></li>
-                    <li id="navBar"><a href="@Url.Action("About", "YourControllerName")">REPORTS</a></li>
+                    <li id="navBar"><a href="@Url.Action("Index")">HOME</a></li>
+                    <li id="navBar"><a href="@Url.Action("Food")">FOOD</a></li>
+                    <li id="navBar"><a href="@Url.Action("Reports")">REPORTS</a></li>
+                    <li id="navBar"><a href="@Url.Action("Account")">REPORTS</a></li>
                 </ul>
             </div>
         </nav>
@@ -74,8 +76,8 @@
 
         /* Change color on hover */
         .navbar a:hover {
-            background-color: #ddd; /* Hover background color */
-            color: black; /* Hover text color */
+            background-color: var(--primary-dark); /* Hover background color */
+                    color: var(--primary-content); /* Hover text color */
         }
 
         /* Style for the logo */
@@ -96,7 +98,6 @@
         .navbar li {
             display: inline-block;
         }
-
 
         .body {
             background: var(--background);
